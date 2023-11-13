@@ -1,9 +1,10 @@
 console.log("Hello from external JavaScript")
+
 alert("Welcome to my website");
 
 // Prompt for favorite color
 let userColor = prompt('What is your favorite color?');
-console.log(`The user entered: ${userColor}`);
+console.log(`The user entered: $${userColor}`);
 // Agree with user
 if (userColor) {
     alert('Great, ' + userColor + ' is my favorite color too!');
