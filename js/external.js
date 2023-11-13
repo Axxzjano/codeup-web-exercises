@@ -26,7 +26,8 @@ let totalMovieCost = (movie1Days * moviePricePerDay) + (movie2Days * moviePriceP
 alert('Total cost for movie rentals: $' + totalMovieCost);
 console.log(`Total movie cost provided to the user`);
 
-// Payment for working as a contractor
+alert("Let's check your total pay");
+// Pay for work
 let hoursAtGoogle = prompt('How many hours did you work for Google?');
 console.log(`The user entered: ${hoursAtGoogle}`);
 let hoursAtAmazon = prompt('How many hours did you work for Amazon?');
