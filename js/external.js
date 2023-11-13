@@ -4,10 +4,11 @@ alert("Welcome to my website");
 // Prompt for favorite color
 let userColor = prompt('What is your favorite color?');
 console.log(`The user entered: ${userColor}`);
-// Check and display if user's favorite color is also yours
+// Agree with user
 if (userColor) {
     alert('Great, ' + userColor + ' is my favorite color too!');
 }
+console.log(`Thanked user for great taste`);
 
 let movie1Days = prompt('How many days did you rent The Little Mermaid for?');
 console.log(`The user entered: ${movie1Days}`);
@@ -23,4 +24,4 @@ let totalMovieCost = (movie1Days * moviePricePerDay) + (movie2Days * moviePriceP
 
 // Display result for movie rentals
 alert('Total cost for movie rentals: $' + totalMovieCost);
-console.log(`Total given to the user`);
+console.log(`Total movie cost provided to the user`);
