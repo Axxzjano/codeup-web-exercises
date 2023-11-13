@@ -25,3 +25,22 @@ let totalMovieCost = (movie1Days * moviePricePerDay) + (movie2Days * moviePriceP
 // Display result for movie rentals
 alert('Total cost for movie rentals: $' + totalMovieCost);
 console.log(`Total movie cost provided to the user`);
+
+// Payment for working as a contractor
+let hoursAtGoogle = prompt('How many hours did you work for Google?');
+console.log(`The user entered: ${hoursAtGoogle}`);
+let hoursAtAmazon = prompt('How many hours did you work for Amazon?');
+console.log(`The user entered: ${hoursAtAmazon}`);
+let hoursAtFacebook = prompt('How many hours did you work for Facebook?');
+console.log(`The user entered: ${hoursAtFacebook}`);
+
+let rateForGoogle = 400;
+let rateForAmazon = 380;
+let rateForFacebook = 350;
+
+// Calculate total payment for working as a contractor
+let totalPayment = (hoursAtGoogle * rateForGoogle) + (hoursAtAmazon * rateForAmazon) + (hoursAtFacebook * rateForFacebook);
+console.log(`Total payment provided to the user`);
+
+// Display result for contractor work
+alert('Total payment for contractor work: $' + totalPayment);
