@@ -1,4 +1,5 @@
 "use strict";
+console.log("Welcome to Functions JS!");
 
 // /**
 //  * TODO:
@@ -70,7 +71,7 @@ console.log(isTwo(random));
 //  * > calculateTip(0.15, 33.42) // returns 5.013
 //  */
 function calculateTip(tipPercentage, billTotal) {
-    return tipPercentage * billTotal;
+    return (tipPercentage * billTotal);
 }
 
 // /**
