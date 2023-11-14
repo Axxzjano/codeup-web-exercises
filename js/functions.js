@@ -103,3 +103,4 @@ alert("You should tip: $" + tipAmount.toFixed(2));
 function applyDiscount(originalPrice, discountPercent) {
     return originalPrice - (originalPrice * discountPercent);
 }
+// console.log(applyDiscount(45.99, 0.12))
