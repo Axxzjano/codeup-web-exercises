@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #111;
+        }
+    </style>
+    <title>Complex Animation</title>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Generate random color
+    function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    // Particle class
+    class Particle {
+        constructor(x, y, size, color, speedX, speedY) {
+            this.x = x;
+            this.y = y;
+            this.size = size;
+            this.color = color;
+            this.speedX = speedX;
+            this.speedY = speedY;
+        }
+
+        // Draw the particle
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = this.color;
+            ctx.fill();
+        }
+
+        // Update particle position
+        update() {
+            if (this.x + this.size > canvas.width || this.x - this.size < 0) {
+                this.speedX = -this.speedX;
+            }
+            if (this.y + this.size > canvas.height || this.y - this.size < 0) {
+                this.speedY = -this.speedY;
+            }
+
+            this.x += this.speedX;
+            this.y += this.speedY;
+        }
+    }
+
+    // Create an array of particles
+    var particles = [];
+    for (var i = 0; i < 100; i++) {
+        var size = Math.random() * 10 + 5;
+        var x = Math.random() * (canvas.width - size * 2) + size;
+        var y = Math.random() * (canvas.height - size * 2) + size;
+        var color = getRandomColor();
+        var speedX = (Math.random() - 0.5) * 2;
+        var speedY = (Math.random() - 0.5) * 2;
+        particles.push(new Particle(x, y, size, color, speedX, speedY));
+    }
+
+    // Define the update function
+    function update() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Update and draw each particle
+        for (var i = 0; i < particles.length; i++) {
+            particles[i].update();
+            particles[i].draw();
+        }
+
+        // Request the next animation frame
+        requestAnimationFrame(update);
+    }
+
+    // Start the animation
+    update();
+</script>
+</body>
+</html>

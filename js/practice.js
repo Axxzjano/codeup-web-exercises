@@ -50,20 +50,8 @@ function pickNumber(number){
 
 }
 alert(pickNumber(3))
-console.log(pickNumber(3)
+let hp=(pickNumber(3)
 )
+console.log(hp);
 
-// function convertGrade(grade){
-//     let letterGrade;
-//     if(grade >= 90){
-//         letterGrade = 'A';
-//     } else if (grade < 80);{
-//         letterGrade = 'B';
-//     } else if (grade < 70);{
-//         letterGrade = 'C';
-//     } else if (grade < 60);{
-//         letterGrade = 'D';
-//     }
 
-//     return;
-// }
