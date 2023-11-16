@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+  <title>Inverting Donut Animation</title>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+
+<script>
+  let canvas = document.getElementById("myCanvas");
+  let ctx = canvas.getContext("2d");
+
+  function update() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Adjust these parameters to control the donut animation
+    let time = new Date().getTime() * 0.002;
+    let centerX = canvas.width / 2;
+    let centerY = canvas.height / 2;
+    let radius = 100;
+    let frequencyX = 0.05;
+    let frequencyY = 0.02;
+
+    for (var theta = 0; theta < 2 * Math.PI; theta += 0.02) {
+      let x = centerX + Math.sin(theta + time * frequencyX) * radius;
+      let y = centerY + Math.cos(theta + time * frequencyY) * radius;
+
+      // Draw pixel at inverted position
+      ctx.fillRect(x, y, 2, 2);
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  update();
+</script>
+</body>
+</html>

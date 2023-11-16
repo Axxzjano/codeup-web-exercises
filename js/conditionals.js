@@ -32,7 +32,7 @@ function analyzeColor(color) {
             return "I don't know anything about " + color;
     }
 }
-
+// console.log(random)
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -99,7 +99,14 @@ function calculateTotal(luckyNumber, totalAmount) {
             return "Invalid lucky number";
     }
 }
-console.log(calculateTotal(1, 55))
+
+// console.log(calculateTotal(1, 87))
+// console.log(calculateTotal(3, 56))
+// console.log(calculateTotal(1, 789))
+// console.log(calculateTotal(3, 678))
+// console.log(calculateTotal(5, 79))
+// console.log(calculateTotal(1, 87))
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -178,3 +185,4 @@ function calculatePlus100(num) {
 function checkNegativeOrPositive(num) {
     return num < 0 ? "The number is negative" : "The number is positive";
 }
+console.log()
