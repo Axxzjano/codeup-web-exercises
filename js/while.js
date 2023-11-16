@@ -5,5 +5,6 @@ let output = "";
 
 while (num <= 65536) {
     output += `${num} `;
-    num *= 2;
+    num *= 2
+    console.log(num)
 }
