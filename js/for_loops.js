@@ -16,11 +16,13 @@ for (let i = 0; i < 10; i++) {
 // loops for the patterns
 for (let i = 1; i <= 9; i++) {
     let output = '';
-    for (let j = 1; j <= i; j++) {
+    for (let bacon = 1; bacon <= i; bacon++) {
         output += i;
     }
     console.log(output);
 }
+
+
 
 // Counting down from 100 to 5 with a step of 5
 for (let i = 100; i >= 5; i -= 5) {
