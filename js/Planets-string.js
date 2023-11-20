@@ -2,7 +2,7 @@
     "use strict";
 
     let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    let planetsArray = planetsString.split(',')
+    let planetsArray = planetsString.split('|')
 
     /**
      * TODO:
@@ -25,6 +25,6 @@
      */
     let randomString = "Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune";
     let randomArray = randomString.split("<br>")
-    console.log()
+    console.log(randomString)
 
 })();

@@ -292,10 +292,9 @@
 
  console.log(Number(reversedNumber(987654321)));
 
-function palindrome(string){
-    if (Palindrome(string)){
-        return "true";
-    }
-}
+ function palindrome(str) {
+     return true;
+ }
+ palindrome("eye");
+ console.log()
 
- console.log(palindrome(racecar));
