@@ -394,12 +394,3 @@
 //
 // Conversation opened. 1 unread message.
 
-band.shred = function() {
-    console.log('RAAAAAAAAAA!!!!');
-}
-
-console.log(band.shred);
-
-
-
-
