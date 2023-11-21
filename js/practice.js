@@ -394,3 +394,16 @@
 //
 // Conversation opened. 1 unread message.
 
+'use strict';
+
+// Create an array of months for printing dates
+let months = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+];
+
+// Create the date corresponding to your birthday using the JavaScript Date object.
+let jsBirthday = new Date('2014-01-01');
+
+// Log your birthday in the format: January 1, 2014 using the JavaScript Date object.
+console.log('Here is my birthday using JavaScript: ' + months[jsBirthday.getMonth()] + ' ' + jsBirthday.getDate() + ', ' + jsBirthday.getFullYear());
