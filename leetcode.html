@@ -2,10 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text RPG Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #output {
+            font-size: 1.2em;
+            margin-top: 20px;
+            animation: fadeIn 2s forwards;
+        }
+
+        .fadeOut {
+            animation: fadeOut 2s forwards;
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 <body>
+<h1>Text RPG Game</h1>
+<div id="output">Welcome to the Text RPG! Click "Start" to begin your adventure.</div>
+<button onclick="startGame()">Start</button>
 
-<script src="js/leetcode.js"></script>
+<script>
+    let player = {
+        name: "",
+        health: 100,
+        attack: 10,
+        defense: 5,
+        potions: 3
+    };
+
+    function startGame() {
+        player.name = prompt("Enter your character's name:");
+
+        document.getElementById("output").classList.add("fadeOut");
+        setTimeout(() => {
+            document.getElementById("output").innerHTML = "Welcome, " + player.name + "!<br>Health: " + player.health + "<br>Attack: " + player.attack + "<br>Defense: " + player.defense + "<br>Potions: " + player.potions;
+            document.getElementById("output").classList.remove("fadeOut");
+            document.getElementById("output").classList.add("fadeIn");
+            document.getElementById("output").innerHTML += "<br><br>Ready for an adventure? <button onclick='explore()'>Explore</button>";
+        }, 2000);
+    }
+
+    function explore() {
+        document.getElementById("output").classList.add("fadeOut");
+        setTimeout(() => {
+            let adventureOutcome = Math.random();
+
+            if (adventureOutcome < 0.3) {
+                // Battle
+                document.getElementById("output").innerHTML = "You encountered a monster!";
+                document.getElementById("output").classList.remove("fadeOut");
+                document.getElementById("output").classList.add("fadeIn");
+                document.getElementById("output").innerHTML += "<br><button onclick='battle()'>Fight</button> <button onclick='usePotion()'>Use Potion</button>";
+            } else {
+                // No battle
+                document.getElementById("output").innerHTML = "You explored and found nothing interesting.";
+                document.getElementById("output").classList.remove("fadeOut");
+                document.getElementById("output").classList.add("fadeIn");
+                document.getElementById("output").innerHTML += "<br><button onclick='explore()'>Explore again</button>";
+            }
+        }, 2000);
+    }
+
+    function battle() {
+        document.getElementById("output").classList.add("fadeOut");
+        setTimeout(() => {
+            let monsterHealth = 50;
+            let monsterAttack = 8;
+
+            document.getElementById("output").innerHTML = "Battle Start!<br>Monster Health: " + monsterHealth;
+            document.getElementById("output").classList.remove("fadeOut");
+            document.getElementById("output").classList.add("fadeIn");
+
+            while (player.health > 0 && monsterHealth > 0) {
+                // Player's turn
+                let playerDamage = Math.max(0, player.attack - monsterAttack);
+                monsterHealth -= playerDamage;
+                document.getElementById("output").innerHTML += "<br>You dealt " + playerDamage + " damage to the monster. Monster Health: " + monsterHealth;
+
+                // Check if the monster is defeated
+                if (monsterHealth <= 0) {
+                    document.getElementById("output").innerHTML += "<br>You defeated the monster!";
+
+                    // Continue the adventure
+                    document.getElementById("output").classList.add("fadeOut");
+                    setTimeout(() => {
+                        document.getElementById("output").innerHTML += "<br><button onclick='explore()'>Continue exploring</button>";
+                        document.getElementById("output").classList.remove("fadeOut");
+                        document.getElementById("output").classList.add("fadeIn");
+                    }, 2000);
+                    break;
+                }
+
+                // Monster's turn
+                let monsterDamage = Math.max(0, monsterAttack - player.defense);
+                player.health -= monsterDamage;
+                document.getElementById("output").innerHTML += "<br>The monster dealt " + monsterDamage + " damage to you. Your Health: " + player.health;
+
+                // Check if the player is defeated
+                if (player.health <= 0) {
+                    document.getElementById("output").innerHTML += "<br>You were defeated by the monster. Game Over.";
+                    break;
+                }
+            }
+        }, 2000);
+    }
+
+    function usePotion() {
+        document.getElementById("output").classList.add("fadeOut");
+        setTimeout(() => {
+            if (player.potions > 0) {
+                player.health += 20;
+                player.potions--;
+                document.getElementById("output").innerHTML = "You used a potion and restored 20 health. Your Health: " + player.health;
+                document.getElementById("output").classList.remove("fadeOut");
+                document.getElementById("output").classList.add("fadeIn");
+                document.getElementById("output").innerHTML += "<br><button onclick='explore()'>Continue exploring</button>";
+            } else {
+                document.getElementById("output").innerHTML = "You don't have any potions left!";
+                document.getElementById("output").classList.remove("fadeOut");
+                document.getElementById("output").classList.add("fadeIn");
+                document.getElementById("output").innerHTML += "<br><button onclick='explore()'>Continue exploring</button>";
+            }
+        }, 2000);
+    }
+</script>
 </body>
 </html>
