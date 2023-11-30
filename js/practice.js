@@ -424,7 +424,8 @@
 // //
 // //     As a bonus, you can allow the user to keep going until they select 5 to exit the program.
 //
-//     const bankTransactions = [
+//     const ban`1q 054
+//     kTransactions = [
 //     { id: 1, date: '2023-01-01', description: 'Deposit', amount: 1000.00, type: 'credit' },
 //     { id: 2, date: '2023-01-05', description: 'Grocery shopping', amount: -50.00, type: 'debit' },
 //     { id: 3, date: '2023-01-10', description: 'ATM withdrawal', amount: -100.00, type: 'debit' },
@@ -736,24 +737,24 @@
 // console.log(nb_year(1500, 5, 100, 5000)); // Output: 15
 // console.log(nb_year(1500000, 2.5, 10000, 2000000)); // Output: 10
 //
-// let myArray=[]
-//
-// let numbers=[1,2,3,4,5]
-//
-// for (let number of numbers) {
-//     console.log(numbers.length)
-//
-// }
-// fruitsName = ["apple", "banana", "orange", "grape"]
-// console.log(fruits[2])
-// let selectedFruit=fruits[2]
-// console.log(`The selected fruit is ${selectedFruit}!`)
-//
-//
-// colors = ["red", "green", "blue"]
-//
-// for (let i = 0; i < colors.length; i++) {
-//     console.log(colors[i])
-// }
+let myArray = []
+
+let numbers = [1, 2, 3, 4, 5]
+
+for (let number of numbers) {
+    console.log(numbers.length)
+
+}
+fruitsName = ["apple", "banana", "orange", "grape"]
+console.log(fruits[2])
+let selectedFruit = fruits[2]
+console.log(`The selected fruit is ${selectedFruit}!`)
+
+
+colors = ["red", "green", "blue"]
+
+for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i])
+}
 
 
