@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <title>Register With Us</title>
+    <title>Register With Us</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
 </head>
-<body>
+<body style="background-color:powderblue">
 
 <form method="POST" action="https://request-inspector.glitch.me/">
 
-  <label for="email">Email:</label>
-  <input type="text" id="email" name="email" placeholder="Enter your email">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email">
 
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" placeholder="Enter your password">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"
+           placeholder="Enter your password">
 
-  <label for="bio">Bio:</label>
-  <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+    <label for="bio">Bio:</label>
+    <textarea  id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
 
-  <div>
-    <h2>How did you hear about us?</h2>
-    <input type="radio" id="billboard" name="advertisement" value="billboard">
-    <label for="billboard">Billboard</label>
+    <br>
 
-    <input type="radio" id="radioAd" name="advertisement" value="radio advertisement">
-    <label for="radioAd">Radio Advertisement</label>
+    <fieldset>
+        <legend>How did you hear about us?</legend>
+        <input type="radio" id="billboard" name="advertisement" value="billboard">
+        <label for="billboard">Billboard</label>
+        <br>
 
-    <input type="radio" id="internetAd" name="advertisement" value="internet advertisement">
-    <label for="internetAd">Internet Advertisement</label>
+        <input type="radio" id="radioAd" name="advertisement" value="radio advertisement">
+        <label for="radioAd">Radio Advertisement</label>
+        <br>
 
-    <input type="radio" id="other" name="advertisement" value="other">
-    <label for="other">Other</label>
-  </div>
+        <input type="radio" id="internetAd" name="advertisement" value="internet advertisement">
+        <label for="internetAd">Internet Advertisement</label>
+        <br>
 
-  <label for="browser">Select your web browser:</label>
-  <select id="browser" name="browser">
-    <option value="chrome">Chrome</option>
-    <option value="firefox">Firefox</option>
-    <option value="edge">Edge</option>
-    <option value="safari">Safari</option>
-    <option value="other">Other</option>
-  </select>
+        <input type="radio" id="other" name="advertisement" value="other">
+        <label for="other">Other</label>
+    </fieldset>
+    <br>
 
-  <input type="submit" value="Submit">
+    <label for="browser">Select your web browser:</label>
+    <select id="browser" name="browser">
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="edge">Edge</option>
+        <option value="safari">Safari</option>
+        <option value="other">Other</option>
+    </select>
+    <br>
+
+    <input type="submit" value="Submit">
 
 </form>
 
