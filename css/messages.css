@@ -10,6 +10,7 @@ body, html {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    border: solid 1px lightgray;
 }
 
 .message-info {
@@ -31,4 +32,3 @@ body, html {
     color: #9f4457;
     background-color: #fad3d7;
 }
-
