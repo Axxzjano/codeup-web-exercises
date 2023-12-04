@@ -1,0 +1,145 @@
+.fancy-header {
+    color: deepskyblue; /* single line comment */
+    text-decoration: underline;
+    text-decoration-color: darkorange;
+}
+
+h3 {
+    color: deepskyblue;
+    text-decoration: underline;
+    text-decoration-color: darkorange;
+}
+
+h2, #second-topic {
+    color: deepskyblue;
+    text-decoration: underline;
+    text-decoration-color: darkorange;
+}
+
+div > li {
+    color: red;
+}
+
+
+span {
+    align: center;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 873w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1173w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1473w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1746w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1773w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2073w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2346&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2346w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2373w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2673w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2946w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2973w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3273&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3273w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3546&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3546w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3573&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3573w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3873w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=4000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4000w');
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: square;
+}
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background: no-repeat url("https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 873w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1173w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1473w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1746w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1773w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2073w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2346&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2346w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2373w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2673w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2946w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2973w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3273&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3273w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3546&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3546w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3573&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3573w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3873w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=4000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4000w'
+    ) center center;
+    background-size: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: deepskyblue;
+}
+
+td, th {
+    padding: 10px;
+    font-size: 14px;
+
+}
+/*#container {*/
+/*    position: relative;*/
+/*    top: 150px;*/
+/*    left: 100px;*/
+/*    overflow: hidden; !* Add this line to hide overflow *!*/
+/*}*/
+
+/*#myVideo {*/
+/*    width: 20%; !* Adjust the width as needed *!*/
+/*    height: 20%; !* Adjust the height as needed *!*/
+/*}*/
+/*.center{*/
+/*    background-color: darkslategray;*/
+/*    border:;*/
+/*    border-color: white;*/
+/*}*/
+
+a {
+    color: red; /* Default link color */
+}
+
+a:hover {
+    color: #004466;
+}
+
+a:visited {
+    color: #660099;
+}
+
+a:active {
+    color: #ff0000;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+img {
+    border: 2px solid #555;
+    border-color: black;
+}
+/*!* Add some content at the bottom of the video/page *!*/
+/*.content {*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*    background: rgba(0, 0, 0, 0.5);*/
+/*    color: #f1f1f1;*/
+/*    width: 100%;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*!* Style the button used to pause/play the video *!*/
+/*#myBtn {*/
+/*    width: 200px;*/
+/*    font-size: 18px;*/
+/*    padding: 10px;*/
+/*    border: none;*/
+/*    background: #000;*/
+/*    color: #fff;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#myBtn:hover {*/
+/*    background: #ddd;*/
+/*    color: black;*/
+/*}*/
+
+
+
+/*Add a style to add a background image to your background. Search how to manipulate the position, sizing of this background image.*/
+/*Add a style to change the list-style to something other than the default bullet.*/
+/*Add a style to change the font for the entire page. Use google fonts if you would like.*/
+/*Add a style to change the table, table cells td and rows tr padding and font sizes.*/
+/*Add a style to alter the anchor tags and its different states.*/
+/*e.g. link, visited, hover and active*/
+/*Continue experimenting with styles to increase the visual appeal of the page.*/
+/*Finally, commit the changes to your git repository, and push to GitHub.*/
+
+/*"https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 873w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1173w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1473w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1746w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1773w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2073w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2346&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2346w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2373w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2673w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2946w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2973w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3273&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3273w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3546&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3546w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3573&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3573w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=3873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3873w, https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=4000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4000w'*/
