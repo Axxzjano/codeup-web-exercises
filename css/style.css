@@ -99,7 +99,7 @@ img {
 
     padding: 1em;
     flex: 1; /* This will make the items take equal width, adjust as needed */
-    margin: 0 1em; /* Add space between the items, adjust as needed */
+    margin-left: auto; /* Add space between the items, adjust as needed */
 }
 .flex-container2 {
     display: flex;
