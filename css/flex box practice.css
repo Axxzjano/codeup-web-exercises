@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: flex-start; /* Adjust as needed */
+    width: 100%;
+    border: 3px solid goldenrod;
+}
+
+.flex-item {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+    flex: 1; /* This will make the items take equal width, adjust as needed */
+    margin: 0 1em; /* Add space between the items, adjust as needed */
+}
