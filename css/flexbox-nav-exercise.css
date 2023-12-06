@@ -43,6 +43,7 @@ body {
 .nav-links a:hover {
     color: blue;
 }
+
 .nav-links li:nth-of-type(4) {
     margin-right: auto;
 }

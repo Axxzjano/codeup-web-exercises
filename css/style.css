@@ -100,9 +100,13 @@ img {
     padding: 1em;
     flex: 1; /* This will make the items take equal width, adjust as needed */
     margin-left: auto; /* Add space between the items, adjust as needed */
+    position: relative;
+    left: 47px;
+    justify-content: space-between;
 }
 .flex-container2 {
     display: flex;
     width: 50%;
-
+    position: relative;
+    right: 100px;
 }
