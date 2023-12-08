@@ -1,0 +1,133 @@
+.page-wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    max-height: 100%;
+    max-width: max-content;
+}
+
+
+li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+h1{
+    position: relative;
+    top: 5px;
+}
+
+
+.nav-links {
+    display: flex;
+    position: relative;
+    top: -50px;
+    right: -680px;
+    padding: 0;
+}
+/*.main{*/
+/*    position: relative;*/
+/*    top:;*/
+/*    left: -100px;*/
+/*}*/
+img{
+    width:900px;
+    height: 400px;
+}
+li {
+    list-style: none;
+    justify-content: space-between;
+    top: 0;
+    right: 300px;
+    margin: .5em;
+}
+.main{
+    display: flex;
+    padding: 0;
+    height: 200px;
+    width: 500px;
+    align-items: start ;
+    flex-direction: column;
+}
+
+.sub-section{
+    display: flex;
+    padding: 0;
+    height: 200px;
+    width: 300px;
+    align-items: start ;
+    flex-direction: column;
+    position: relative;
+    right: -600px;
+    bottom: 200px;
+}
+.alert-info {
+    display: none;
+}
+@media only screen and (max-width: 480px) {
+
+    .alert-info{
+        flex-direction: column;
+        justify-content: center;
+        right: 30%;
+        top: 10%;
+        display: inline;
+        border: 1px solid #cccccc;
+        padding: 6px 50px;
+        background-color: #ccffff;
+        margin-left: 17%;
+        margin-bottom: 5px;
+        padding-bottom: 12px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        right: 0; /* Adjust as needed */
+        top: 50px;
+    }
+    li {
+        margin: 10px 0;
+        border: 1px solid black;
+        padding: 7px 150px;
+        background-color: #ccc;
+    }
+    li:nth-child(3) {
+        padding: 7px 152px;
+    }
+    li:nth-child(4) {
+        padding: 7px 145px;
+    }
+    h1{
+        position:absolute;
+        right: 100px;
+        top: 20px;
+
+    }
+    img{
+        position:absolute;
+        right: 1px;
+        top: 315px;
+        max-width: 340px;
+        height: auto;
+    }
+    .main{
+        position:absolute;
+        right: 30px;
+        top: 480px;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .sub-section{
+        position:absolute;
+        right: 30px;
+        top: 700px;
+        max-width: 300px;
+        height: auto;
+    }
+    footer{
+        position:absolute;
+        right: 160px;
+        top: 940px;
+    }
+}

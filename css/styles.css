@@ -65,6 +65,7 @@ button.btn {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+
 }
 
 button.btn.btn-login {
@@ -73,6 +74,13 @@ button.btn.btn-login {
     min-width: 250px;
     height: 51px;
     width: 51px;
-}
 
+
+}
+container>button{
+    height: 51px;
+    width: 51px;
+    border-radius: 100%;
+    background-color: white;
+}
 

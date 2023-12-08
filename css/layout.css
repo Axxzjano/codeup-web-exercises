@@ -195,12 +195,14 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 100%;
 }
 
 .bottom-wave{
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 100%;
 }
 
 .wavy1{
@@ -227,8 +229,4 @@ div.container.login{
     position: absolute;
     top: -7px;
     right: -14px;
-    padding: .5em;
-    border-radius: 100%;
-    background-color: white;
-    border: 1px solid lightgray;
 }
